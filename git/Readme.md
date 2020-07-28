@@ -20,7 +20,7 @@ Each layer is created by you. Whenever you feel it is time to create a layer go 
 
 ### Stages of working with git
 
-There are three stages in git
+There are three stages in git,
 
 1. Files you are working on
 2. Staging area (Contain files for creating next layer)
@@ -32,7 +32,7 @@ There are three stages in git
     git init
 ```
 
-Once a project to initialize a local repository
+Once a project to initialize a local repository.
 
 ## Connect local repository with Github repository
 
@@ -40,7 +40,7 @@ Once a project to initialize a local repository
     git remote add origin <github-repo-url>
 ```
 
-Connect a local repository with github repository once a project
+Connect a local repository with github repository once a project.
 
 ```git
     git clone <github-repo-url>
@@ -52,7 +52,7 @@ Setup existing github repository for working in your local system (Simply downlo
     git remote set-url origin <github-repo-url>
 ```
 
-Changing a github repository url
+Changing a github repository url.
 
 ## Basic git commands
 
@@ -60,25 +60,25 @@ Changing a github repository url
     git status
 ```
 
-See the status of the local repository
+See the status of the local repository.
 
 ```git
     git add <file-name>
 ```
 
-Add a specific file to staging area
+Add a specific file to staging area.
 
 ```git
     git add .
 ```
 
-Add all modified and newly created files to staging area
+Add all modified and newly created files to staging area.
 
 ```git
     git commit -m "<Reason-for-commit>"
 ```
 
-Commit all files in staging area with the reason of what changes you did (In my words creating new layer)
+Commit all files in staging area with the reason of what changes you did (In my words creating new layer).
 
 ```git
     git commit - a -m "<Reason-for-commit>"
@@ -94,23 +94,15 @@ Add all modified files to stage and commit them.
     git push origin master
 ```
 
-Push the commits of the master branch from local repository to Github
+Push the commits of the master branch from local repository to Github.
 
 ```git
     git pull origin master
 ```
 
-Pull the commits of the master branch from Github to local repository
+Pull the commits of the master branch from Github to local repository.
 
 ## Logs
-
-```git
-    git log
-```
-
-Shows details about each commit.
-
-**_ Note: Enter to continue; q to exit _**
 
 ```git
     git log --oneline
@@ -120,13 +112,27 @@ Shows each commit with id and reason(short details).
 
 **_ Note: Enter to continue; q to exit _**
 
+```git
+    git log
+```
+
+Shows details about each commit.
+
+**_ Note: Enter to continue; q to exit _**
+
 ## difference
 
 ```git
     git diff
 ```
 
-Show changes between final
+Show changes between last staged files and working files.
+
+```git
+    git diff --staged
+```
+
+Show changes between last commit and staged files.
 
 ## Cheatsheet for commands
 
@@ -148,4 +154,7 @@ git push origin master
 
 git log
 git log --oneline
+
+git diff
+git diff --staged
 ```
