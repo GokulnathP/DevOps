@@ -102,6 +102,32 @@ Push the commits of the master branch from local repository to Github
 
 Pull the commits of the master branch from Github to local repository
 
+## Logs
+
+```git
+    git log
+```
+
+Shows details about each commit.
+
+**_ Note: Enter to continue; q to exit _**
+
+```git
+    git log --oneline
+```
+
+Shows each commit with id and reason(short details).
+
+**_ Note: Enter to continue; q to exit _**
+
+## difference
+
+```git
+    git diff
+```
+
+Show changes between final
+
 ## Cheatsheet for commands
 
 ```git
@@ -119,4 +145,7 @@ git clone <github-repo-url>
 
 git pull origin master
 git push origin master
+
+git log
+git log --oneline
 ```
