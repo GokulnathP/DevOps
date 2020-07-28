@@ -102,6 +102,38 @@ Push the commits of the master branch from local repository to Github.
 
 Pull the commits of the master branch from Github to local repository.
 
+## Branch
+
+```git
+    git branch
+```
+
+Shows all branch in your repository. Master is the default branch.
+
+```git
+    git branch <branch-name>
+```
+
+Create a new branch. When you create a branch by default it consits all files in master branch.
+
+```git
+    git checkout <branch-name>
+```
+
+Switching between branchs.
+
+```git
+    git merge <branch-name>
+```
+
+Merge all changes from the branch you specified to current branch you are working.
+
+```git
+    git branch -d <branch-name>
+```
+
+Delete a branch.
+
 ## Logs
 
 ```git
@@ -151,6 +183,12 @@ git clone <github-repo-url>
 
 git pull origin master
 git push origin master
+
+git branch
+git branch <branch-name>
+git checkout <branch-name>
+git merge <branch-name>
+git branch -d <branch-name>
 
 git log
 git log --oneline
