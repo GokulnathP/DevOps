@@ -86,7 +86,7 @@ Commit all files in staging area with the reason of what changes you did (In my 
 
 Add all modified files to stage and commit them.
 
-**_ Note: Newly created files are not be taken when you use this command for commit_**
+**Note: Newly created files are not be taken when you use this command for commit**
 
 ## Communication between Git and Github
 
@@ -142,7 +142,7 @@ Delete a branch.
 
 Shows each commit with id and reason(short details).
 
-**_ Note: Enter to continue; q to exit _**
+**Note: Enter to continue; q to exit**
 
 ```git
     git log
@@ -150,7 +150,45 @@ Shows each commit with id and reason(short details).
 
 Shows details about each commit.
 
-**_ Note: Enter to continue; q to exit _**
+**Note: Enter to continue; q to exit**
+
+## Undo
+
+```git
+    git restore --staged <file-name>
+```
+
+Unstage or remove the file from the stage area.
+
+```git
+    git restore --staged .
+```
+
+Unstage or remove all the file from the stage area.
+
+```git
+    git reset <commit-id>
+```
+
+Switch to commit(layer) you specified. The commit after the sepcific commit-id will be deleted.
+
+**You will find commit-id in logs**
+
+```git
+    git revert <commit-id>
+```
+
+Create new commit which contains the changes in that commit you specified. Safe way of doing because you can switch if you don't want it. Incase of reset it won't.
+
+**You will find commit-id in logs**
+
+```git
+    git checkout <commit-id>
+```
+
+Simply view the changes in specific commit. you cant switch back to old stage using **git checkout \<branch-name\>**
+
+**You will find commit-id in logs**
 
 ## difference
 
@@ -192,6 +230,12 @@ git branch -d <branch-name>
 
 git log
 git log --oneline
+
+git restore --staged <file-name>
+git restore --staged .
+git reset <commit-id>
+git revert <commit-id>
+git checkout <commit-id>
 
 git diff
 git diff --staged
