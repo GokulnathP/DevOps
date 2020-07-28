@@ -10,7 +10,7 @@ Git is local version control tool.
 
 You have a changes as layers one top of another. When you don't want the current change or you want any of the previous change, you can easily switch to it.
 
-![Layers](https://www.professionalindemnity.co.uk/cms/photo/misc/three_flat__layers.png){:height="100px" width="100px"}
+![Layers](https://www.professionalindemnity.co.uk/cms/photo/misc/three_flat__layers.png =100x)
 
 Each layer is created by you. How many layers you have is your own decision.
 
