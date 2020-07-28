@@ -20,6 +20,8 @@ Each layer is created by you. Whenever you feel it is time to create a layer go 
 
 ### Stages of working with git
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9XU-mhS1xiQ9Us3SOAmkg7Ggdwj_Ln_8yqg&usqp=CAU" alt="Layers" title="Layers" width="100px" style="float:right;padding-left:20px"/>
+
 There are three stages in git,
 
 1. Files you are working on
